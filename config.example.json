@@ -1,0 +1,10 @@
+{
+    "token": "",
+    "base_dir": "/path/to/library",
+    "images_channel": 123456789012345678,
+    "guessing_channel": 234567890123456789,
+    "exclude": [],
+    "season_regex": "^Sezon (?P<season>\\d+)(?:\\s*[–-]\\s*(?P<title>.*))?$",
+    "episode_regex": "^(?P<title>.+?)\\s*#(?P<episode>\\d+)\\b",
+    "round_delay": 5
+}
