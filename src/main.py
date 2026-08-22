@@ -157,12 +157,9 @@ def _as_int(value):
 
 
 def random_video(index):
-    choices = [
-        (folder, name)
-        for folder, data in index.items()
-        for name in data["episodes"]
-    ]
-    return random.choice(choices)
+    folder = random.choice(list(index))
+    name = random.choice(list(index[folder]["episodes"]))
+    return folder, name
 
 
 def numbered_list(items):
